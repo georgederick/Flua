@@ -1,5 +1,5 @@
 "use strict";
-/* ===== Eventos ===== */
+
 document.addEventListener("click",e=>{
  const t=e.target,c=s=>t.closest(s);let x;
  if(x=c("[data-done]")){e.stopPropagation();const k=D.tasks.find(a=>a.id===x.dataset.done);k.status=k.status===4?0:4;setDone(k);if(k.status===4){act(`Você concluiu “${k.title}”`);toast("Tarefa concluída")}save();return draw()}
@@ -26,7 +26,7 @@ document.addEventListener("change",e=>{const t=e.target;
  if(t.id==="sname"){D.settings.name=t.value||"Você";save();draw()}
  if(t.id==="sthm"){D.settings.theme=t.value;save();theme()}});
 document.addEventListener("input",e=>{if(e.target.id==="fq"){F.q=e.target.value;const p=e.target.selectionStart;draw();const i=$("#fq");i.focus();i.setSelectionRange(p,p)}});
-/* Drag and drop nativo */
+
 let dragId=null;
 document.addEventListener("dragstart",e=>{const c=e.target.closest&&e.target.closest(".tc");if(c){dragId=c.dataset.id;c.classList.add("drag");e.dataTransfer.effectAllowed="move";e.dataTransfer.setData("text/plain",dragId)}});
 document.addEventListener("dragend",e=>{document.querySelectorAll(".drag,.over").forEach(n=>n.classList.remove("drag","over"))});
