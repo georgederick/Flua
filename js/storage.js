@@ -1,5 +1,5 @@
 "use strict";
-/* ===== Storage: troque load/save por chamadas de API no futuro ===== */
+
 const KEY="flua.v1";let mem=null;
 const Store={
  load(){try{const s=localStorage.getItem(KEY);if(s)return JSON.parse(s)}catch(e){}return mem},
