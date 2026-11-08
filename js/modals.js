@@ -1,5 +1,5 @@
 "use strict";
-/* ===== Modais ===== */
+
 function modal(h){const o=document.createElement("div");o.className="ov";o.innerHTML=`<div class="md" role="dialog" aria-modal="true">${h}</div>`;o.addEventListener("mousedown",e=>{if(e.target===o)o.remove()});document.body.append(o);const i=o.querySelector("input");i&&i.focus();return o}
 function confirmBox(msg,fn){const o=modal(`<h2>Confirmar</h2><p>${msg}</p><div class="acts"><button class="btn" data-x>Cancelar</button><button class="btn p" data-ok>Excluir</button></div>`);o.onclick=e=>{if(e.target.dataset.x!=null)o.remove();if(e.target.dataset.ok!=null){fn();o.remove()}}}
 const opts=(a,sel)=>a.map(([v,l])=>`<option value="${v}" ${String(v)===String(sel)?"selected":""}>${esc(l)}</option>`).join("");
