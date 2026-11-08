@@ -1,5 +1,5 @@
 "use strict";
-/* ===== Rotas ===== */
+
 const ROUTES=[["dash","Visão geral","M3 10l7-6 7 6v7H3z"],["mine","Minhas tarefas","M4 10l4 4 8-8"],["kanban","Quadro","M3 4h5v12H3zM12 4h5v7h-5z"],["proj","Projetos","M3 6h14v10H3zM7 6V4h6v2"],["cal","Calendário","M3 5h14v12H3zM3 9h14M7 3v4M13 3v4"],["team","Equipe","M7 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM2 17c0-3 2-5 5-5s5 2 5 5"],["set","Configurações","M10 7a3 3 0 1 0 0 6 3 3 0 0 0 0-6zM10 2v2M10 16v2M2 10h2M16 10h2"]];
 let route="dash",F={q:"",st:"",pr:"",as:""},calM=new Date(),param=null;
 function side(){
