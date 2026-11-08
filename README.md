@@ -1,4 +1,4 @@
-<p align="center"><img src="assets/logo.svg" alt="Flua" height="48"></p>
+<p align="center"><img src="assets/logo-dark.svg" alt="Flua" height="48"></p>
 
 <p align="center"><b>Gerenciador de tarefas e produtividade, feito com HTML, CSS e JavaScript puros.</b></p>
 
