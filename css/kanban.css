@@ -1,0 +1,9 @@
+.board{display:flex;gap:14px;align-items:flex-start;overflow-x:auto;padding-bottom:12px}
+.col{flex:0 0 268px;background:var(--bg);border:1px solid var(--ln);border-radius:var(--r);padding:10px;min-height:120px}
+.col.over{outline:2px dashed var(--ac)}
+.col h4{display:flex;align-items:center;gap:8px;padding:2px 4px 10px;font-size:13px}.col h4 em{font-style:normal;color:var(--mt);flex:1}
+.tc{background:var(--sf);border:1px solid var(--ln);border-radius:10px;padding:11px;margin-bottom:8px;cursor:grab;box-shadow:var(--sh)}
+.tc.drag{opacity:.4}.tc p{font-weight:500;margin-bottom:8px}.tc div{display:flex;gap:6px;align-items:center;flex-wrap:wrap}
+.cal{display:grid;grid-template-columns:repeat(7,1fr);gap:1px;background:var(--ln);border:1px solid var(--ln);border-radius:var(--r);overflow:hidden}
+.cal>div{background:var(--sf);min-height:92px;padding:6px;overflow:hidden;font-size:12px}.cal .h{min-height:0;color:var(--mt);text-align:center;font-weight:600}
+.cal .o{opacity:.4}.cal .t{color:var(--ac);font-weight:700}.cal small{display:block;padding:1px 5px;margin-top:2px;border-radius:5px;background:var(--acs);color:var(--ac);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;cursor:pointer}
