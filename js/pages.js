@@ -1,5 +1,5 @@
 "use strict";
-/* ===== Páginas ===== */
+
 function dash(){
  const L=live(),n=s=>L.filter(t=>t.status===s).length;
  const k=[["Total",L.length,"var(--tx)"],["Pendentes",n(0),"var(--mt)"],["Em andamento",n(1)+n(2)+n(3),"var(--wr)"],["Concluídas",n(4),"var(--ok)"],["Atrasadas",L.filter(late).length,"var(--er)"]];
