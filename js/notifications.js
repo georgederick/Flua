@@ -1,5 +1,5 @@
 "use strict";
-/* ===== Busca global e notificações ===== */
+
 function search(){
  const o=modal(`<input id="gq" placeholder="Buscar tarefas, projetos, pessoas, tags…" style="width:100%;padding:10px;border:1px solid var(--ln);border-radius:9px;background:var(--sf)"><div id="gr" style="margin-top:12px"></div>`);
  const run=()=>{const q=$("#gq").value.toLowerCase().trim();if(!q){$("#gr").innerHTML=empty("Digite para buscar");return}
